@@ -13,32 +13,34 @@ import React from 'react';
 
  export default class PictureButtonObject extends React.Component {
    render() {
-       return(
-           <View>
-               <VrButton onClick = {() => {
-                              postMessage({type: "newPic", pic: this.props.pic});
+      return (
+        <View>
+
+        <VrButton onClick = {() => {
+          postMessage({type: "newPic", pic: this.props.pic});
           AudioModule.playOneShot({
            source: asset('click.mp3'),
           });
         }}>
-               <Entity 
-                     source={{
-                        obj: asset('PictureButton.obj'),
-                         mtl: asset('PictureButton.mtl'),
-                    }}
-                     lit={true}
-                    style={{
-                         transform:[
-                            {translate:[this.props.x,this.props.y,this.props.z]},
-                            {scale:1},
-                            {scaleY:1.5}
-                         ]
-                    }}
-                           
-                />
-                </VrButton>
-           
-           </View>
-        )
-   }
-};
+
+           <Entity
+ style={{
+   transform: [
+     {translate: [this.props.x, this.props.y, this.props.z]},
+     {scale: 1},
+     {scaleY: 1.5}
+   ],
+ }}
+ source={{
+   obj: asset('PictureButton.obj'),
+   mtl: asset('PictureButton.mtl')
+ }}
+ lit={true}
+ />
+
+ </VrButton>
+
+        </View>
+      );
+    }
+  };

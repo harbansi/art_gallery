@@ -10,6 +10,7 @@ import {
 } from 'react-360';
 import Entity from 'Entity';
 import ThreeD from './components/ThreeD';
+import UIScreen from './components/UIScreen';
 
 export default class ArtGallery extends React.Component {
   render() {
@@ -25,3 +26,4 @@ export default class ArtGallery extends React.Component {
 
 
 AppRegistry.registerComponent('ArtGallery', () => ArtGallery);
+AppRegistry.registerComponent('UIScreen', () => UIScreen);

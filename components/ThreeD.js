@@ -59,7 +59,65 @@ export default class ThreeD extends React.Component {
         return (
             <View>
 
-                {/* <PictureButtonObject x={94} y={-54.3} z={-45} pic="gallery/ae8da775f2db3a5545ece0d660590eec.jpg"/> */}
+<PictureButtonObject x={14.3} y={-54.5} z={-49} pic={'gallery/ae8da775f2db3a5545ece0d660590eec.jpg'} /> 
+<PictureButtonObject x={50.6} y={-54.5} z={-48.8} /> 
+<PictureButtonObject x={55} y={-54.5} z={-48.8} /> 
+<PictureButtonObject x={87.6} y={-54.5} z={-48.8} /> 
+<PictureButtonObject x={93.6} y={-54.5} z={-50} /> 
+
+{/* 1st */}
+<PictureButtonObject x={10.2} y={-54.5} z={-52} /> 
+{/* 2nd  */}
+<PictureButtonObject x={10.2} y={-54.5} z={-58}  />
+{/* 3rd */}
+<PictureButtonObject x={10} y={-54.5} z={-84}  />
+{/* 4th */}
+<PictureButtonObject x={14.3} y={-54.5} z={-88}  />
+{/* 5th */}
+<PictureButtonObject x={51} y={-54.5} z={-88}  />
+{/* 6th */}
+<PictureButtonObject x={56.6} y={-54.5} z={-88}  />
+{/* 7th  */}
+<PictureButtonObject x={89.4} y={-54.5} z={-88}  />
+{/* 8th  */}
+<PictureButtonObject x={95} y={-54.5} z={-88}  />
+
+
+
+<PictureButtonObject x={59} y={-62.5} z={-168}  />
+<PictureButtonObject x={55} y={-62.5} z={-167.5}  />
+
+<PictureButtonObject x={15.7} y={-62.5} z={-167.5}  />
+<PictureButtonObject x={10.7} y={-62.5} z={-171.3}  />
+<PictureButtonObject x={10.7} y={-62.5} z={-175.5}  />
+
+
+<PictureButtonObject x={10.7} y={-62.5} z={-225}  />
+<PictureButtonObject x={10.7} y={-62.5} z={-230}  />
+
+
+<PictureButtonObject x={15} y={-62.5} z={-234.3}  />
+
+
+<PictureButtonObject x={56} y={-62.5} z={-234.3}  />
+<PictureButtonObject x={60.8} y={-62.5} z={-234.3}  />
+<PictureButtonObject x={65} y={-62.5} z={-234.3}  />
+
+<PictureButtonObject x={110.4} y={-62.5} z={-234.3}  />
+
+
+<PictureButtonObject x={114.6} y={-62.5} z={-230.3}  />
+
+
+<PictureButtonObject x={114.6} y={-62.5} z={-202.7}  />
+<PictureButtonObject x={114.6} y={-62.5} z={-199}  />
+
+
+
+
+
+
+
                 {/* 1st track point */}
 
                 <VrButton
@@ -265,42 +323,7 @@ export default class ThreeD extends React.Component {
                         this.state.zTarPos = 55;
                     }}>
 
-                    <Entity
-                        source={{
-                            obj: asset('PictureButton.obj'),
-                            mtl: asset('PictureButton.mtl'),
-                        }}
-                        lit={true}
-                        style={{
-                            position:'relative',
-                            transform: [
-                                { translate: [7, -54, -53] },
-                                { scale: 2 },
-                                { scaleY: 1.3}
-                                
-                            ]
-                        }}
-                        
-
-                    />
-
-<Entity
-                        source={{
-                            obj: asset('PictureButton.obj'),
-                            mtl: asset('PictureButton.mtl'),
-                        }}
-                        lit={true}
-                        style={{
-                            position:'relative',
-                            transform: [
-                                { translate: [7, -54, -86] },
-                                { scale: 2 },
-                                { scaleY: 1.3}
-                                
-                            ]
-                        }}
-
-                    />
+                    
                     <Entity
                         source={{
                             obj: asset('Marker.obj'),
@@ -515,7 +538,7 @@ export default class ThreeD extends React.Component {
                     onClick={() => {
                         this.state.xTarPos = -15;
                         this.state.zTarPos = 140;
-                        this.state.yTarPos = 68.2;
+                        this.state.yTarPos = 62.3;
                     }}>
 
                     <Entity
@@ -541,7 +564,7 @@ export default class ThreeD extends React.Component {
                     onClick={() => {
                         this.state.xTarPos = -90;
                         this.state.zTarPos = 143;
-                        this.state.yTarPos = 68.3;
+                        this.state.yTarPos = 62.3;
                     }}>
 
                     <Entity
@@ -567,7 +590,7 @@ export default class ThreeD extends React.Component {
                     onClick={() => {
                         this.state.xTarPos = -90;
                         this.state.zTarPos = 173;
-                        this.state.yTarPos = 68.3;
+                        this.state.yTarPos = 62.3;
                     }}>
 
                     <Entity
@@ -594,7 +617,7 @@ export default class ThreeD extends React.Component {
                     onClick={() => {
                         this.state.xTarPos = -60;
                         this.state.zTarPos = 173;
-                        this.state.yTarPos = 68.3;
+                        this.state.yTarPos = 62.3;
                     }}>
 
                     <Entity
@@ -621,7 +644,7 @@ export default class ThreeD extends React.Component {
                     onClick={() => {
                         this.state.xTarPos = -15;
                         this.state.zTarPos = 173;
-                        this.state.yTarPos = 67.6;
+                        this.state.yTarPos = 62.3;
                     }}>
 
                     <Entity
@@ -648,7 +671,7 @@ export default class ThreeD extends React.Component {
                     onClick={() => {
                         this.state.xTarPos = -15;
                         this.state.zTarPos = 230;
-                        this.state.yTarPos = 67.6;
+                        this.state.yTarPos = 62.3;
                     }}>
 
                     <Entity
@@ -675,7 +698,7 @@ export default class ThreeD extends React.Component {
                     onClick={() => {
                         this.state.xTarPos = -60;
                         this.state.zTarPos = 230;
-                        this.state.yTarPos = 67.6;
+                        this.state.yTarPos = 62.3;
                     }}>
 
                     <Entity
@@ -703,7 +726,7 @@ export default class ThreeD extends React.Component {
                     onClick={() => {
                         this.state.xTarPos = -110;
                         this.state.zTarPos = 230;
-                        this.state.yTarPos = 67.6;
+                        this.state.yTarPos = 62.3;
                     }}>
 
                     <Entity
@@ -731,7 +754,7 @@ export default class ThreeD extends React.Component {
                     onClick={() => {
                         this.state.xTarPos = -110;
                         this.state.zTarPos = 200;
-                        this.state.yTarPos = 67.6;
+                        this.state.yTarPos = 62.3;
                     }}>
 
                     <Entity
@@ -755,7 +778,7 @@ export default class ThreeD extends React.Component {
                     onClick={() => {
                         this.state.xTarPos = -110;
                         this.state.zTarPos = 173;
-                        this.state.yTarPos = 67.6;
+                        this.state.yTarPos = 62.3;
                     }}>
 
                     <Entity
@@ -782,7 +805,7 @@ export default class ThreeD extends React.Component {
                     onClick={() => {
                         this.state.xTarPos = -110;
                         this.state.zTarPos = 150;
-                        this.state.yTarPos = 67.6;
+                        this.state.yTarPos = 62.3;
                     }}>
 
                     <Entity
@@ -809,7 +832,7 @@ export default class ThreeD extends React.Component {
                     onClick={() => {
                         this.state.xTarPos = -150;
                         this.state.zTarPos = 150;
-                        this.state.yTarPos = 67.6;
+                        this.state.yTarPos = 62.3;
                     }}>
 
                     <Entity
